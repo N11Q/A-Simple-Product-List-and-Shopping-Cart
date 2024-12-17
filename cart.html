@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Cart</title>
+         <!-- Favicon link-->
+        <link rel="icon" type="image/x-icon" href="images/tm.png">
+        <!-- Bootstrap link-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+          crossorigin="anonymous"
+        />
+    
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Ubuntu&display=swap"
+          rel="stylesheet"
+        />
+    
+        <!--Css style sheets-->
+        <link rel="stylesheet" href="styles.css" />
+        <!--Fontawesome script-->
+        <script
+          src="https://kit.fontawesome.com/95fb47db52.js"
+          crossorigin="anonymous"
+        ></script>
+      </head>
+<body>
+    <section id="title">
+        <div class="container-fluid">
+          <!-- Nav Bar -->
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html">Tech Market</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo02"
+              aria-controls="navbarTogglerDemo02"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+    
+
+<!--Shopping Cart-->
+<section class="container content-section" id="shopping-cart">
+      
+  <h3 style="text-decoration: underline;text-align: center; margin-bottom: 7%;">Shopping Cart</h3>
+ 
+ <table class="table table-hover table-cart">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <tbody class="cart-items">
+    
+     
+  </tbody>
+</table>
+
+    <div class="cart-total"> 
+      <strong class="cart-total-title">Total</strong>
+      <span  class="cart-total-price" style="text-align: right;">$0</span>
+    </div>
+ 
+
+    <div class="btn-purchase" style="margin-top: 10%;">
+      <button type="button"  class="btn btn-dark btn-purchase "><i class="fa-solid fa-cart-shopping " style="margin-right: 6%;"></i>PURCHASE</button>
+    </div>
+
+</section>
+ 
+<!--Footer-->
+<section id="footer">
+  <div class="card text-center">
+   
+    <div class="card-body">
+      <h3 class="card-title"><i class="fa-solid fa-gift" style="margin-right: 1%;"></i>Tech Market</h3>
+      <p>Thank You , Come Again !!!</p>
+    </div>
+    <div class="card-footer text-muted">
+       <p></p>
+       <p></p>
+    </div>
+  </div>
+</section>
+    
+    
+    <!--Additonal Products-->
+    <section id="product-cards">
+      <div class="container-fluid">
+        <h3 class="product-name">Users Also Bought</h3>
+        <div class="row row-cols-2 row-cols-md-4 g-4">
+          <div class=" col filter-item all new ">
+            <div class="card h-100">
+              <img src="https://www.ubuy.com.gh/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvODFGZkhxdndBTEwuX0FDX1NMMTUwMF8uanBn.jpg" class="card-img-top shop-item-image" alt="...">
+              <div class="card-body">
+                <h5 class="card-title shop-item-title">Lenovo Ideapad 2020</h5>
+                <p class="card-text shop-item-price"> GHC 6990.00</p>
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+              </div>
+            </div>
+          </div>
+    
+          <div class=" col filter-item all new">
+            <div class="card h-100">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPx8qubNl9IRANluuFF5RH9gQTPWFLM5fdJg&s" class="card-img-top shop-item-image" alt="...">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title shop-item-title">Samsung S21</h5>
+                <p class="card-text shop-item-price"> GHC 5790.00</p>
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+              </div>
+            </div>
+          </div>
+    
+          <div class=" col filter-item all new">
+            <div class="card h-100">
+              <img src="https://get4lessghana.com/wp-content/uploads/2022/08/Nintendo-Switch-2.jpg" class="card-img-top shop-item-image" alt="...">
+              <div class="card-body">
+                <h5 class="card-title shop-item-title">Nintendo Switch </h5>
+                <p class="card-text shop-item-price">GHC 4590.00</p>
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+              </div>
+            </div>
+          </div>
+    
+          <div class=" col filter-item all new">
+            <div class="card h-100">
+              <img src="https://bestpricegh.com/cdn/shop/products/2020iPadProGhana_dd0b0a04-4055-48ce-9d2e-25be320fd992.jpg?v=1599486734" class="card-img-top shop-item-image " alt="...">
+              <div class="card-body">
+                <h5 class="card-title shop-item-title">Ipad Pro
+                  </h5>
+                <p class="card-text shop-item-price"> GHC 2490.00</p>
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+              </div>
+            </div>
+          </div>
+    
+          <div class=" col filter-item all office-wear ">
+            <div class="card h-100">
+              <img src="https://www.abanista.com/wp-content/uploads/2021/08/43LM637Pva.jpg" class="card-img-top shop-item-image" alt="...">
+              <div class="card-body">
+                <h5 class="card-title shop-item-title">LG Smart LED TV 43"</h5>
+                <p class="card-text shop-item-price"> GHC 3990.00</p>
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+              </div>
+            </div>
+          </div>
+    
+          <div class=" col filter-item all office-wear">
+            <div class="card h-100">
+              <img src="https://telefonika.com/wp-content/uploads/2021/02/71eaCQY8lL._AC_SL1500_.jpg" class="card-img-top shop-item-image" alt="...">
+              <div class="card-body">
+                <h5 class="card-title shop-item-title">JBL Speakers</h5>
+                <p class="card-text shop-item-price">GHC 3290.00</p>
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class=" col filter-item all office-wear">
+            <div class="card h-100">
+              <img src="https://m.media-amazon.com/images/I/61fAM4U4gbL._AC_UY1000_.jpg" class="card-img-top shop-item-image" alt="...">
+              <div class="card-body">
+                <h5 class="card-title shop-item-title">Pixel Watch 3</h5>
+                <p class="card-text shop-item-price">GHC 6490.00</p>
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+              </div>
+            </div>
+          </div>
+    
+          <div class=" col filter-item all office-wear">
+            <div class="card h-100">
+              <img src="https://telefonika.com/wp-content/uploads/2022/07/61hSY1MJ2OL._AC_SL1500_.jpg" class="card-img-top shop-item-image" alt="...">
+              <div class="card-body">
+                <h5 class="card-title shop-item-title">Sony Headphones</h5>
+                <p class="card-text shop-item-price">GHC 3690.00</p>
+                <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+              </div>
+            </div>
+          </div>
+    
+         
+          </div>
+    
+    
+        </div>
+      </div>
+    </section>
+    
+    
+
+<footer id="footer">
+    <div class="row">
+      <div class="col-lg-12">
+        <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter ficon"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook-f ficon"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram ficon"></i></a>
+            <a href="mailto:" target="_blank"> <i class="fa-solid fa-envelope ficon"></i></a>
+  </div>
+       <div class="col-lg-12"></div>
+    <p>© Copyright 2024 Tech Market</p>
+  </div>
+  </footer>
+ <!--Boostrap script-->
+ <script
+ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+ crossorigin="anonymous"
+></script>
+<script src="index.js">
+
+</script>
+</body>
+</html>
